@@ -16,7 +16,7 @@ void merge(int list[], int left, int mid, int right)
             sorted[k++] = list[i++];
         }
         else
-            sorted[k++] = list[j++];https://www.acmicpc.net/problem/2751
+            sorted[k++] = list[j++];
     }
     if (i > mid) {
         for (; j <= right; j++)
