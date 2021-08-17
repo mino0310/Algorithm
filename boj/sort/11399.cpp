@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-
+#include <algorithm>
 using namespace std;
 
 struct draw {
@@ -21,7 +21,7 @@ int main(void)
     vector<draw> v;
 
     int n, i, tmp, sum = 0;
-    int res[1001], output[1001], plz = 0;
+    int output[1001], res = 0;
 
     cin >> n;
     for (i = 1; i <= n; i++)
@@ -37,10 +37,10 @@ int main(void)
     }
     for (i = 0; i < n; i++)
     {
-        plz += output[i];
+        res += output[i];
     }
 
-    cout << plz << endl;
+    cout << res << endl;
     return 0;
 }
 
