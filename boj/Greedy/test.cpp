@@ -12,6 +12,8 @@ int main(void)
     cout << v.size() << endl;
     v[100] = 3;
 
+    cout << v.capacity() << endl;
+
     cout << v.size() << endl;
     return 0;
 }
