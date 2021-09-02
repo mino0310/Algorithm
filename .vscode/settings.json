@@ -4,6 +4,11 @@
         "ostream": "cpp",
         "iostream": "cpp",
         "vector": "cpp",
-        "__config": "cpp"
+        "__config": "cpp",
+        "algorithm": "cpp",
+        "iosfwd": "cpp",
+        "string": "cpp",
+        "utility": "cpp",
+        "ios": "cpp"
     }
 }
