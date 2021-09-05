@@ -9,6 +9,9 @@
         "iosfwd": "cpp",
         "string": "cpp",
         "utility": "cpp",
-        "ios": "cpp"
+        "ios": "cpp",
+        "stack": "cpp",
+        "istream": "cpp",
+        "sstream": "cpp"
     }
 }
