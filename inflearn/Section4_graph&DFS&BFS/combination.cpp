@@ -5,9 +5,9 @@
 using namespace std;
 
 int n, r;
-int num[20], res[20];
+int num[20], res[20], ch[20];
 
-void DFS(int s, int L)
+void DFS1(int s, int L)
 {
     if (L == r)
     {
@@ -20,10 +20,28 @@ void DFS(int s, int L)
     }
 
     else{
-        for (int i = s; i < n; i++)
+        for (int i = s; i <= n; i++)
         {
                 res[L] = i;
-                DFS(i + 1, L + 1);
+                DFS1(i + 1, L + 1);
+        }
+    }
+}
+
+void DFS(int s, int L)
+{
+    if (L == r) {
+        for (int i = 0; i < 20; i++) {
+            if (ch[i] == 1) {
+                cout << i << " ";
+            }
+        }
+        cout << endl;
+    } else {
+        for (int i = s; i <= n; i++) {
+            ch[i] = 1;
+            DFS(i + 1, L + 1);
+            ch[i] = 0;
         }
     }
 }
@@ -37,7 +55,7 @@ int main(void)
     {
         num[i] = i;
     }
-    DFS(0, 0);
+    DFS(1, 0);
 
     return 0;
 }
