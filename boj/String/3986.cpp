@@ -22,19 +22,18 @@ int main(){
         stack<char> S;
         cin >> input;
         
-
-
         for (int i = 0; i < input.length(); i++) {
-            S.push(input[i]);
+            if(S.empty() || S.top() != input[i]){
+                S.push(input[i]);
+                // cout << "zzz" << endl;
+            }
+            else if (!S.empty() && S.top() == input[i]){
+                S.pop();
+            }
         }
-
+        if (S.empty()) cnt++;
         while (!S.empty()) S.pop();
     }
-
     cout << cnt << endl;
 }
 
-// 일단 둘의 호응을 이룬다는 건 나오면 바로 사라진다는 건가.
-// 이런 류의 문제는 보통 스택을 많이 사용해서 풀지, 나왔으면 다음에 제거해주면 되니까.
-// 스택을 사용해서 풀어보자.
-// 일단 다음에 풀자.
