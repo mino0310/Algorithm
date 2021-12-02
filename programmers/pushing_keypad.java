@@ -14,7 +14,7 @@ class Solution {
                 right_idx = number;
             } else {
                 int leftLength = getLength(left_idx, number);
-                int rightLength =getLength(right_idx, number);
+                int rightLength = getLength(right_idx, number);
 
                 if (leftLength > rightLength){
                     sb.append("R");
@@ -28,7 +28,7 @@ class Solution {
                         right_idx = number;
                     } else {
                         sb.append("L");
-                        leftLength = number;
+                        left_idx = number;
                     }
                 }
             }
@@ -48,3 +48,4 @@ class Solution {
         return Math.abs(x-numX) + Math.abs(y-numY);
     }
 }
+dfdfdfd
