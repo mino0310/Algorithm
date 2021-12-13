@@ -48,4 +48,3 @@ class Solution {
         return Math.abs(x-numX) + Math.abs(y-numY);
     }
 }
-dfdfdfddfdfddfd
