@@ -1,3 +1,4 @@
+package java;
 public static int[] solution(int[] lottos, int[] win_nums) {
 
     int correct_cnt = 0, zero_cnt = 0, score = 0;

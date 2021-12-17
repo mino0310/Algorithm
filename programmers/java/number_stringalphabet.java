@@ -1,3 +1,4 @@
+package java;
 class Solution {
     public int solution(String s) {
 		String res = s.replaceAll("zero", "0");

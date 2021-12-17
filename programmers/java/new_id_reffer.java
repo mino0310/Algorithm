@@ -1,3 +1,4 @@
+package java;
 public class new_id_reffer {
     public static String solution(String new_id) {
 		String answer = new_id.toLowerCase();
