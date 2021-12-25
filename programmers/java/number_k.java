@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class number_k {
     public static int[] solution(int[] array, int[][] commands) {
 
