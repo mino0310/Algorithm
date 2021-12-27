@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Launch cnt_sosu",
+            "request": "launch",
+            "mainClass": "cnt_sosu",
+            "projectName": "Algorithm_6c66845d"
+        },
+        {
             "name": "(gdb) 시작",
             "type": "cppdbg",
             "request": "launch",
