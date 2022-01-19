@@ -1,4 +1,9 @@
+package com.example.codingTest;
+
+import java.util.StringTokenizer;
+
 public class dartGame {
+
     public static void main(String[] args) {
 
         int solution = solution("1S*2T*3S");
@@ -55,3 +60,4 @@ public class dartGame {
         return Integer.valueOf(totalScore);
     }
 }
+
