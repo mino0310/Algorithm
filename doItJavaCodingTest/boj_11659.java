@@ -7,6 +7,7 @@ public class boj_11659 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
+
         int[] input = Arrays.stream(br.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         int dataCount = input[0];
         int iterCount = input[1];
@@ -23,6 +24,7 @@ public class boj_11659 {
             sumArr[i] = sumArr[i - 1] + arr[i - 1];
         }
 
+        System.out.println(":zz");
         for (int i = 0; i < iterCount; i++) {
             int[] in = Arrays.stream(br.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
             int startPoint = in[1];
@@ -31,8 +33,9 @@ public class boj_11659 {
             res[i] = tmp;
         }
 
+        System.out.println("zzzzzz");
         for (int re : res) {
-            System.out.println(re);
+            System.out.println("test =" + re);
         }
     }
 }
